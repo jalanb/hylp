@@ -1,0 +1,10 @@
+"""Add hylp to a bash script"""
+
+import sys
+
+
+def main():
+    return 0
+
+if __name__ == '__main__':
+    sys.exit(main())
