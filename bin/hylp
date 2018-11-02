@@ -1,9 +1,15 @@
+#! /usr/bin/env python
+
 """Add hylp to a bash script"""
 
 import sys
 
+from hylp.hylp import ArgumentParser
+from hylp.hylp import parse_args
 
 def main():
+    parser = ArgumentParser(description='help text')
+    parser.parse_args()
     return 0
 
 if __name__ == '__main__':

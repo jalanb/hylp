@@ -1,5 +1,5 @@
-The /Users/jab/src/git/hub/hlyp/hylp/hylp module
-================================================
+he hylp module
+==============
 
-    >>> from hylp import hylp
+    >>> import hylp
     >>> assert 'Expand -h from Python' in hylp.__doc__

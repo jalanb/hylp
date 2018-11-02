@@ -11,16 +11,18 @@ Send
 """
 
 import sys
-from argparse import ArgumentParser
+from argparse import ArgumentParser as BatteryParser
 
-class HylpArgumentParser(ArgumentParser):
-    pass
+class ArgumentParser(BatteryParser):
+    def __init__(self, *args, **kwargs):
+        super(*args, **kwargs)
 
 
 def parse_args():
+    return None
     lines = __doc__.splitlines()
     head, tail = lines[0], lines[1:]
-    parser = HylpArgumentParser(head, help=tail)
+    parser = ArgumentParser(head)
     parser.add_argument('Hello', help='World')
     return parser.parse_args()
 
