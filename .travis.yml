@@ -1,7 +1,9 @@
 language: python
 python:
 - '3.6'
-install: "pip install -r requirements.txt"
+install: pip install -r requirements.txt
 script: nosetests
 notifications:
   email: false
+  slack:
+    secure: VYcn3hk/yGXFJEfqzk+tSFT5+Q0acd8JL1fGpOGBGpYPljMp7h1t/Yri9VQk1aj7lB//Livv7I00kq/5n30jOGSn9xqcmNeB347JH9gqlx68Q9mYjyITL6YdX3p13qO2EEuiuyUdByPuuvuVGIYoz8weSJVt8oq/3wBYmRNDKk8reUSaCtzHgG/EwtT6mOIv9hPaeruiqYQEg7HUyAaUNh6FmyMXFPkeAER+JPdOxBqpm+7h9wQgHeBOtMhgUkgh1FP0A+/PSxEiV+i6cBpyBxyTPc5WL1nUP9WBRMWuvOcPNp5RCvVK8IXsFIImUCwdMkG/tvXRPRuUYWGUlA5kBpUHXr6Hjh0D6so2rlmygVyEx4Ra2jpf8RAiMbOvXmmVZcM9+Gy61xS53rnTLY5MDUHbFE3/ul72+WMbIgxD146czWH/8IWDzuACZpOj/H05ikHP2QImgd9LrBF/76n4AwpScvDTRuYVDyuCo3B5KUMsV6+d393f50aEY52i+dl5UghIedg8X7mM1aZNPcoijV4X+a26OuH5DBUlDP2mMHDjZX0TvraICdPBA22gfKwjLDkq4Zd34yiakl7pMgUGbcvK9CaJLssRJoTDZ6AjauOj8mizD0NpHpqgxpJOnmq2E7UtACRZJe36vkVxY+9kJrfpEYAUpzntPXvwUmALeIA=
